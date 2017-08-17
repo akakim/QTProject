@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tripath.com.qsalesprototypeapp.GetListActivity"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/appBarLayout"
+            android:visibility="visible"
+            >
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_appbar"
+                app:layout_scrollFlags="scroll|snap|enterAlways"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_appbar"
+                    android:background="@color/app_bar">
+
+                    <!--<com.tripath.autoground.dealer.Widget.ButtonTextAndImg-->
+                        <!--android:id="@+id/btnHome"-->
+                        <!--android:layout_width="@dimen/_45sdp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:foreground="?attr/selectableItemBackground"-->
+                        <!--app:img_size="@dimen/_40sdp"-->
+                        <!--app:src="@drawable/btn_home"-->
+                        <!--/>-->
+
+
+
+                    <ImageView
+                        android:id="@+id/btnRefresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:src="@drawable/btn_refresh"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=" 채팅방 목록"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/text_size_appbar"
+                        android:textStyle="bold"
+                        android:id="@+id/textView6"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_setting"
+                        android:layout_toLeftOf="@id/btnRefresh"
+                        android:id="@+id/setting_Layer"/>
+
+                </RelativeLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appBarLayout"
+            android:id="@+id/layoutContainer">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:text="데이터가 없습니다."
+                android:id="@+id/emptyView"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

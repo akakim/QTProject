@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/fade</item>
+        <item name="android:windowExitTransition">@android:transition/fade</item>
+
+        <item name="editTextStyle">@style/Widget.App.EditText</item>
+        <item name="buttonStyle">@style/Widget.App.Button</item>
+
+
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.AppBarNotOverlay" parent="Theme.AppCompat.DayNight.DarkActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+
+    <style name="dilatingDotsProgressDefaultTheme" parent="AlertDialog.AppCompat.Light">
+        <item name="android:windowBackground">@color/transparent_black</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+    <style name="Widget.App.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:textColorHint">@color/ed_hint</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="Widget.App.ReadView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:background">@drawable/bg_btn_join</item>
+    </style>
+</resources>

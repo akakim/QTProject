@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">큐세일즈</string>
+
+    <string name="shared_img_logo">imgLogo</string>
+    <string name="shared_view_root">viewRoot</string>
+    <string name="shared_btn_main">sharedBtnMain</string>
+    <string name="shared_text_join">sharedBtnJoin</string>
+    <string name="shared_ic_camera">sharedIcCamera</string>
+
+    <string name="shared_ed_id">sharedEdId</string>
+    <string name="shared_ed_pwd">sharedEdPwd</string>
+
+    <string name="shared_gall_folder">sharedGallFolder</string>
+    <string name="shared_gall_img">sharedGallImg</string>
+
+
+    <string name="registration_id">AIzaSyBtnQW2jlbvtySD1d65fB5jeNB37-bYJ2I</string>
+    <string name="project_number">133455015913</string>
+</resources>

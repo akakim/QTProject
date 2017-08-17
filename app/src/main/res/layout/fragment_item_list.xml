@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <tripath.com.qsalesprototypeapp.wiget.customRecyclerView
+        android:id="@+id/list"
+        android:name="tripath.com.qsalesprototypeapp.fragment.ItemListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="tripath.com.qsalesprototypeapp.fragment.ItemListFragment"
+        tools:listitem="@layout/fragment_item" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:text="데이터가 없습니다."
+        android:id="@+id/emptyView"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:visibility="gone"/>
+</FrameLayout>
